@@ -68,7 +68,7 @@ palabras <- titulos %>%
 Agregamos el código para visualizar el set de datos, las primeras 15 filas.
 
 ```{r}
-________(palabras, n=15)
+print (palabras, n=15)
 
 ```
 
@@ -76,7 +76,7 @@ ________(palabras, n=15)
 Con las palabras finales seleccionadas armamos una nube de palabras. Completa el código para poder obtener una nube de palabras. Aquí si queremos que se muestre el resultado.
 
 ```{r}
-___________ (__________ , size = 1, minRotation = -pi/6, maxRotation = -pi/6,
+print (, size = 1, minRotation = -pi/6, maxRotation = -pi/6,
                   color = "random-light", backgroundColor = "grey")
 
 ```
