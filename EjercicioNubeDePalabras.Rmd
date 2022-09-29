@@ -9,8 +9,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 
 # Cargar las librerías necesarias
-library(__________) #Para usar dplyr
-library(__________) #Para usar tidytext
+library("dplyr") 
+library("tydytext") 
 library(wordcloud2)
 library(tm)
 library(readr)
@@ -25,7 +25,7 @@ Tenemos en el archivo `rladies_meetup.csv` los títulos de los eventos de R-Ladi
 EL primer paso es leer el archivo que tiene todos los titulos de meetups de r-ladies. **Completen este código para que se lea el archivo "rladies_meetups.csv"**
 
 ```{r}
-titulos <- ________("rladies_meetups.csv")
+titulos <- "rladies_meetups.csv"
 
 ```
 
@@ -57,8 +57,8 @@ Completa el código para poder obtener el conjunto de datos `palabras` para lueg
   
 ```{r}
 palabras <- titulos %>%
-  _____________(word, titulo) %>%
-  _____________(variosIdiomas_stop_words) %>%
+  (word, titulo) %>%
+  (variosIdiomas_stop_words) %>%
   count(word) %>%
   _____________(n>10)
 
@@ -68,7 +68,7 @@ palabras <- titulos %>%
 Agregamos el código para visualizar el set de datos, las primeras 15 filas.
 
 ```{r}
-________(palabras, n=________)
+________(palabras, n=15)
 
 ```
 
